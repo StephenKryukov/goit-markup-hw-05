@@ -422,6 +422,28 @@ nav {
 .is-hidden .modal {
 	transform: translate(-50%, -50%) scale(0.5);
 }
+.close-button {
+	position: absolute;
+	top: 8px;
+	left: 490px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	background: var(--primary-white-color);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	cursor: pointer;
+}
+.close-button .icon {
+	fill: currentColor;
+}
+.close-button .icon:hover, .close-button .icon:focus {
+	fill: var(--accent-color);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /* Портфолио-кнопки */
 .portfolio-button, .portfolio-current {
