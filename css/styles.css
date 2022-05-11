@@ -56,8 +56,13 @@ img, a {
 }
 
 /* Шапка сайта */
-header {
-	outline: 1px solid #ECECEC;
+header::after {
+	display: block;
+	position: absolute;
+	top: 79px;
+	content: "";
+	width: 100%;
+	border-bottom: 1px solid #ECECEC;
 }
 .container {
 	margin-left: auto;
@@ -98,6 +103,7 @@ nav {
 	height: 4px;
 	border-radius: 2px;
 	background-color: var(--accent-color);
+	z-index: 1;
 }
 .header-mail, .header-tel {
 	color: var(--secondary-text-color);
